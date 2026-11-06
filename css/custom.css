@@ -1,0 +1,496 @@
+ :root {
+    /* CHANGE ORDER OF COLOURS AROUND LATER */
+  --brand-primary: #992fbf;
+  --brand-secondary: #c181d8;
+  --brand-accent: #cc1188;
+  --brand-dark: #33eebb;
+  --brand-light: #ee79c3;
+  --brand-panel: #99eebb;
+  --brand-text: black;
+  --brand-muted: #992fbf;
+  --brand-border: black;
+  --font-heading: 'Rye', Arial, sans-serif;
+  --font-body: 'Merienda', Arial, sans-serif;
+}
+
+ /* Custom fonts from Google */
+.rye-regular {
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.merienda-bodyfont {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style:normal;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 5rem;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--brand-text);
+  background: var(--brand-panel);
+  line-height: 1.6;
+}
+
+ /* CHANGE COLOURS LATER. WORKING */
+[data-bs-theme="dark"] body {
+  /* --brand-primary: rgb(86, 86, 86); */
+  /* --brand-secondary: grey; */
+  --brand-dark: black;
+  --brand-light: #151515;
+  /* --brand-accent: #a3a3a3; */
+  --brand-panel: #202124;
+  --brand-text: #f3f7e9;
+  /* --brand-muted: #cdd6bd; */
+  --brand-border: white;
+  color: var(--brand-text);
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: var(--brand-text);
+  color: white;
+  padding: .75rem 1rem;
+  z-index: 2000;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+h1, h2, h3, h4, h5, .navbar-brand {
+  font-family: var(--font-heading);
+}
+
+h1 {
+  font-size: clamp(2.6rem, 7vw, 5.5rem);
+  color: var(--brand-primary);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: var(--brand-primary);
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+h3 {
+  color: var(--brand-accent);
+  font-size: 1.45rem;
+}
+
+h4 {
+  color: var(--brand-muted);
+  font-size: 1rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+a {
+  color: var(--brand-secondary);
+}
+
+a:hover {
+  color: var(--brand-secondary);
+}
+
+/* Navigation */
+.portfolio-nav {
+  background: var(--brand-accent);
+  border-bottom: 4px solid var(--brand-primary);
+}
+
+.brand-avatar {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--brand-dark);
+}
+
+.nav-link {
+  color: var(--brand-dark);
+  font-weight: 700;
+  border-radius: 999px;
+  padding-inline: .85rem !important;
+}
+
+/* DARK THEME WORKING */
+[data-bs-theme="dark"] .nav-link,
+[data-bs-theme="dark"] .navbar-brand,
+[data-bs-theme="dark"] .theme-switch {
+  color: var(--brand-text);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+  color: var(--brand-dark);
+  background: var(--brand-primary);
+}
+
+.navbar-toggler {
+  border: 2px solid var(--brand-primary);
+}
+
+.theme-switch {
+  color: var(--brand-dark);
+  font-weight: 700;
+}
+
+.theme-switch .form-check-input:checked {
+  background-color: var(--brand-primary);
+  border-color: var(--brand-primary);
+}
+
+/* Home Hero customised. */
+.hero {
+  min-height: 70vh;
+  padding-block: 4rem;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.758), rgba(56,56,56,0.562)), 
+    url('../img/pink_lillies.JPG') center/cover no-repeat;
+}
+
+/* MIGHT NEED TO SPECIFY COLOUR IN EACH SECTION. */
+
+.hero-img {
+  max-width: 340px;
+  border-radius: 2rem;
+  border: 10px solid var(--brand-primary);
+  box-shadow: 16px 16px 0 var(--brand-accent);
+}
+
+.standout {
+  color: var(--brand-secondary);
+  font-weight: 700;
+}
+
+.typing-heading {
+  min-height: 3.6rem;
+  margin-bottom: 1rem;
+}
+
+/* TYPEWRITER EFFECT WORKING. */
+.typewrite {
+  color: var(--brand-primary);
+  border-right: .08em solid var(--brand-primary);
+  padding-right: .1rem;
+  animation: blinkCursor .8s step-end infinite;
+}
+
+@keyframes blinkCursor {
+  50% {border-color: transparent;}
+}
+
+/* CARD STYLES FROM BART TEMPLATE */
+.section-panel {
+  background: var(--brand-dark);
+  border: 1px solid var(--brand-border);
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+
+/* HOME PAGE CARDS */
+.feature-card,
+.project-card,
+.resume-card {
+  background: var(--brand-dark);
+  border: 1px solid var(--brand-border);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  height: 100%;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+/* HOME PAGE CARDS HOVER COLOUR */
+.feature-card:hover,
+.project-card:hover,
+.resume-card:hover {
+  transform: translateY(-.25rem);
+  box-shadow: 0 1rem 2rem #ee79c3;
+}
+
+/* HOME PAGE ICON ON CARDS */
+.feature-icon {
+  font-size: 2rem;
+  color: var(--brand-secondary);
+}
+
+
+/* PILL BUTTON STYLE FROM BART SIMPSON TEMPLATE. */
+.btn-portfolio {
+  display: inline-block;
+  color: var(--brand-panel);
+  background: var(--brand-accent);
+  border: 2px solid var(--brand-primary);
+  border-radius: 999px;
+  font-weight: 700;
+  padding: .85rem 1.2rem;
+  text-decoration: none;
+}
+
+/* Gallery */
+.content-panel {
+  background-color: var(--brand-dark);
+  border: 2px solid var(--brand-border);
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.portfolio-card img {
+  height: 150px;
+  object-fit: cover;
+}
+
+.portfolio-card {
+  background: var(--brand-dark);
+  border: 2px solid var(--brand-border);
+  border-radius: 1.25rem;
+}
+
+.custom-btn,
+.custom-btn-secondary {
+  border: 2px solid var(--brand-primary);
+  font-weight: 700;
+}
+
+.custom-btn {
+  background-color: var(--brand-primary);;
+}
+
+/* COLOUR CHANGE WHEN HOVERING OVER BUTTON */
+.btn-portfolio:hover,
+.btn-portfolio:focus {
+  color: #992fbf;
+  background: var(--brand-light);
+}
+
+/* RESUME STYLE */
+
+/* PROGRESS BAR NON-FILLED AREA */
+.progress {
+  height: 2rem;
+  background: #6b6b6b;
+  border-radius: 999px;
+}
+
+/* CHANGE COLOUR OF FILLED PROGRESS BAR */
+.progress-bar {
+  background: var(--brand-secondary);
+  font-weight: 700;
+}
+
+/* PHOTOGRAPHY PROGRESS BAR */
+.progress-bar.secondary {
+  background: var(--brand-accent);
+}
+
+/* SOFTWARE PROGRAM PROGRESS BAR*/
+.progress-bar.tertiary {
+  background: var(--brand-primary);
+  color: var(--brand-dark);
+}
+
+/* PROGRESS BARS ARE NOW WITHIN BORDER */
+.timeline-item {
+  border-left: 5px solid var(--brand-primary);
+  padding-left: 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.pdf-frame {
+  width: 100%;
+  min-height: 520px;
+  border: 4px solid var(--brand-border);
+  border-radius: 1rem;
+}
+
+.optinal-note {
+  border-left: 6px solid var(--brand-primary);
+  background: rgba(192,249,5,.13);
+  padding: 1rem;
+  border-radius: .75rem;
+}
+
+/* LETS SEE WHAT THIS DOES */
+
+.skills-list {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Skills titles are purple */
+.skill-card-heading h3 {
+  margin: 0;
+  color: var(--brand-text);
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+}
+
+.skills-percentage {
+  flex: 0 0 auto;
+  min-width: 3.25rem;
+  text-align: right;
+  color: var(--brand-secondary);
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.skill-card .progress {
+  width: 100%;
+  height: .9rem;
+  margin: 0;
+  overflow: hidden;
+}
+
+.skill-card .progress-bar {
+  min-width: 0;
+}
+
+@media (max-width: 575.98px) {
+  .skill-card {
+    padding: 1rem;
+  }
+
+  .skill-card-heading {
+    align-items: flex-start;
+  }
+
+  .skill-card-heading h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* RESPONSIVE PARALLAX OMGGGGG ITS WORKING  <3 */
+.resume-parallax {
+  min-height: 390px;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background:
+    linear-gradient(rgba(20,25,10,.38), rgba(20,25,10,.52)),
+    url('../img/leaves.JPG') center/cover fixed no-repeat;
+    display: grid;
+    place-items: center;
+}
+
+.parallax-content {
+  padding: 4rem 1rem;
+}
+
+/* CAROUSEL FROM BART SIMPSON TEMPLATE */
+.carousel-item img {
+  height: 330px;
+  object-fit: contain;
+}
+
+/* MODAL CODE */
+/* Colours pop-up window and text */
+.modal-content {
+  background: var(--brand-light);
+  color: var(--brand-text);
+}
+
+/* CODE FOR THE FORM / GET IN TOUCH PAGE */
+.form-control,
+.form-select {
+  border: 2px solid var(--brand-border);
+  background: var(--brand-panel);
+  color: var(--brand-text);
+}
+
+/* COLOUR OF OUTLINE WHEN SELECTED */
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--brand-primary);
+  box-shadow: 0 0 0.25rem rgba(209, 211, 202, 0.98);
+}
+
+/* NOT SATISFIED WITH THE LAYOUT. COULD NOT FIGURE OUT WHAT WENT WRONG. */
+/* Contact details should be on right-side of the form */
+.contact-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Keep the way it is */
+.contact-details {
+  width: 50%;
+  padding-top: 40px;
+}
+
+/* keep */
+/* Adjusting spacing */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+/* keep */
+/* Adjusting icon position */
+.contact-item i {
+  font-size: 30px;
+  width: 35px;
+  text-align: center;
+}
+
+.contact-item h3 {
+  margin: 0 0 5px;
+}
+
+.contact-item p {
+  margin: 0;
+}
+
+/* COLOUR OF FOOTER */
+.site-footer {
+  background: var(--brand-accent);
+}
+
+/* COLOUR OF TEXT IN FOOTER */
+.site-footer a,
+.site-footer p {
+  color: black;
+}
+
+:focus-visible {
+  outline: 4px solid var(--brand-accent);
+  outline-offset: 3px;
+}
+
+@media (max-width: 767.98px), (prefers-reduced-motion: reduce) {
+  .resume-parallax {
+    min-height: 240px;
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero {
+    min-height: auto;
+    padding-block: 2rem;
+  }
+
+  .hero-img {
+    max-width: 240px;
+    border-width: 6px;
+    box-shadow: 8px 8px 0 var(--brand-accent);
+  }
+}
+

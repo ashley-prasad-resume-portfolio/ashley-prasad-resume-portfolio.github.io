@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ashley Prasad Portfolio Resume">
+  <meta name="Ashley Prasad" content="INFO1005 Website Design">
+  <title>Ashley Prasad | Portfolio</title>
+
+  <!-- Browser Tab Icon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+
+  <!-- Google Font Package -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300&family=Rye&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+<a class="skip-link" href="#maincontent">Skip to main content</a>
+
+<nav class="navbar navbar-expand-lg sticky-top portfolio-nav" aria-label="Main portfolio navigation">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="img/profile_icon.jpg" alt="Ashley Prasad icon" class="brand-avatar">
+      <span>Ashley Prasad</span>
+    </a>
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="about.html">About</a></li><li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li><li class="nav-item"><a class="nav-link active" href="portfolio.html" aria-current="page">Portfolio</a></li><li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-3">
+          <div class="form-check form-switch theme-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="themeSwitch">
+            <label class="form-check-label" for="themeSwitch">Dark</label>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main id="maincontent" class="container my-5">
+  <header class="section-panel mb-5">
+    <h1>Portfolio</h1>
+    <p class="lead">Here, you can find some examples of the work I have created in the past. The examples provided had given client satisfaction of the end product.</p>
+  </header>
+
+  <!-- Pop-up modal for Portfolio Cards x3 -->
+  <section class="row my-4" aria-label="content-panel">
+    <h2>Porfolio Cards</h2>
+
+      <div class="col-12 col-md-4">
+        <div class="card h-100 portfolio-card">
+          <img src="img/linkedin_banner.jpeg" class="card-img-top" alt="LinkedIn banner">
+          <div class="card-body">
+            <h3 class="card-title">LinkedIn Banner</h3>
+            <p class="card-text">This is my LinkedIn Banner that I created myself.</p>
+            <button type="button" class="btn custom-btn-secondary" data-bs-toggle="modal" data-bs-target="#projectModal1">Read Project Brief</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card h-100 portfolio-card">
+          <img src="img/fresh_vibes_logo.jpeg" class="card-img-top" alt="Fruit smoothie business logo">
+          <div class="card-body">
+            <h3 class="card-title">Business Logo</h3>
+            <p class="card-text">This is my logo that I created for a business that sells fresh fruit smoothies. YUMMY!</p>
+            <button type="button" class="btn custom-btn-secondary" data-bs-toggle="modal" data-bs-target="#projectModal2">Read Project Brief</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card h-100 portfolio-card">
+          <img src="img/ai_generated.jpeg" class="card-img-top" alt="Artificial Intelligence prompted advertisement">
+          <div class="card-body">
+            <h3 class="card-title">AI Advertisement</h3>
+            <p class="card-text">This is an advertisement I created using Artificial Intelligence (AI).</p>
+            <button type="button" class="btn custom-btn-secondary" data-bs-toggle="modal" data-bs-target="#projectModal3">Read Project Brief</button>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- CAROUSEL OF PHOTOGRAPHS. WORKING -->
+  <section id="projects" class="content-panel">
+    <h2>The Gallery</h2>
+    <p>Here are some of my favourite photos.</p>
+
+    <div id="projectCarousel" class="carousel slide carousel-dark">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="img/Kookaburra.jpg" class="d-block w-100 carousel-img" alt="Photograph of a Kookaburra, an Australian native bird">
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/mushroom.JPG" class="d-block w-100 carousel-img" alt="Photograph of orange mushrooms growing on a mossy fallen tree">
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/lizard.JPG" class="d-block w-100 carousel-img " alt="Photograph of a lizard blending on tree branch">
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/white_flowers.JPG" class="d-block w-100 carousel-img" alt="Photograph of small white flowers">
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/lion.JPG" class="d-block w-100 carousel-img" alt="Photograph of a lion">
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/pine_tree.JPG" class="d-block w-100 carousel-img" alt="Photograph of a pine tree up close">
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/black_swan.JPG" class="d-block w-100 carousel-img" alt="Photograph of a black swan">
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/flowers.JPG" class="d-block w-100 carousel-img" alt="Photograph of flowers">
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </section>
+</main>
+
+  <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="projectModalLabel1">LinkedIn Banner</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/linkedin_banner.jpeg" class="img-fluid d-block mx-auto" alt="LinkedIn Banner">
+          <p>I created my own LinkedIn banner using Adobe Express. I wanted to provide a demonstration of my digital editing and creative skills I have to offer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="projectModalLabel2">Business Logo</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/fresh_vibes_logo.jpeg" class="img-fluid d-block mx-auto" alt="Business Logo">
+          <p>Fresh Vibes was great to collaborate with. Together we were able to create this logo. 100% CLIENT SATISFACTION!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="projectModalLabel3">AI Advertisement</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="img/ai_generated.jpeg" class="img-fluid d-block mx-auto" alt="AI Advert">
+          <p>After many, many, many prompts later. I was able to generate this advertisement using Artificial Intelligence. Client was very pleased with the end product.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<footer class="site-footer py-4 mt-5">
+  <div class="container d-flex flex-column flex-md-row justify-content-between gap-3">
+    <p class="mb-0">&copy; 2026 Ashley Prasad | Portfolio Resume</p>
+    <p class="mb-0"><a href="pdf/ashley_prasad_resume.pdf" target="_blank">Resume PDF Download</a></p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

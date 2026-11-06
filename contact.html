@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ashley Prasad Portfolio Resume">
+  <meta name="Ashley Prasad" content="INFO1005 Website Design">
+  <title>Ashley Prasad | Contact</title>
+
+  <!-- Browser Tab Icon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+
+  <!-- Google Font Package -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300&family=Rye&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+<a class="skip-link" href="#maincontent">Skip to main content</a>
+
+<nav class="navbar navbar-expand-lg sticky-top portfolio-nav" aria-label="Main portfolio navigation">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="img/profile_icon.jpg" alt="Ashley Prasad icon" class="brand-avatar">
+      <span>Ashley Prasad</span>
+    </a>
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="about.html">About</a></li><li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li><li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li><li class="nav-item"><a class="nav-link active" href="contact.html" aria-current="page">Contact</a></li>
+        <li class="nav-item ms-lg-3">
+          <div class="form-check form-switch theme-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="themeSwitch">
+            <label class="form-check-label" for="themeSwitch">Dark</label>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main id="maincontent" class="container my-5">
+  <header class="section-panel mb-5">
+    <h1>Get in Touch</h1>
+    <p class="lead">Do I sound like the perfect partner to create YOUR digitl design? Get in touch by either filling out this form or contact me.</p>
+  </header>
+
+  <div class="contact-layout">
+    <div class="contact-form">
+      <section class="col-lg-6">
+        <form class="section-panel needs-validation h-100" novalidate>
+          <h2>Get in Touch</h2>
+          <p class="small">Please provide your Name, Email, and summary of your enquiry. I will chat to you as soon as possible. Thank you! (THIS FORM IS DEMO ONLY)</p>
+
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required>
+            <div class="invalid-feedback">Please enter your name.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+            <div class="invalid-feedback">Please enter a valid email address.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="projectType" class="form-label">Type of Project</label>
+            <select class="form-select" id="projectType" required>
+              <option value="">Choose one of the following options:</option>
+              <option>Website Design</option>
+              <option>Photography</option>
+              <option>Logo Design</option>
+              <option>AI generated advertisements</option>
+              <option>Other</option>
+            </select>
+            <div class="invalid-feedback">Please choose a type of project.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5" required></textarea>
+            <div class="invalid-feedback">Please enter a message.</div>
+          </div>
+
+          <button class="btn btn-portfolio" type="submit">Check demo form</button>
+          <p class="form-status mt-3" aria-live="polite"></p>
+        </form>
+      </section>
+    </div>
+
+    <!-- My fake contact details -->
+    <div class="contact-details">
+      <h2>Contact Information</h2>
+
+      <!-- Changed icon to envelope using Bootstrap icons: https://icons.getbootstrap.com/icons/envelope-open/ -->
+      <div class="contact-item">
+        <i class="bi bi-envelope-open"></i>
+        <div>
+          <h3>Email</h3>
+          <p>a.p@email.com</p>
+        </div>
+      </div>
+     
+      <!-- Changed icon to envelope using Bootstrap icons: https://icons.getbootstrap.com/icons/telephone-outbound/ -->
+      <div class="contact-item">
+        <i class="bi bi-telephone-outbound"></i>
+        <div>
+          <h3>Phone No.</h3>
+          <p>0403 123 456</p>
+        </div>
+      </div>
+
+      <!-- Changed icon to envelope using Bootstrap icons: https://icons.getbootstrap.com/icons/geo-alt/ -->
+      <div class="contact-item">
+        <i class="bi bi-geo-alt"></i>
+        <div>
+          <h3>Based in:</h3>
+          <p>Sydney, Australia</p>
+        </div>
+      </div>
+
+      <!-- Changed icon to envelope using Bootstrap icons: https://icons.getbootstrap.com/icons/linkedin/ -->
+      <div class="contact-item">
+        <i class="bi bi-linkedin"></i>
+        <div>
+          <h3>Find me on LinkedIn</h3>
+          <p class="mb-0"><a href="https://au.linkedin.com/" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer py-4 mt-5">
+  <div class="container d-flex flex-column flex-md-row justify-content-between gap-3">
+    <p class="mb-0">&copy; 2026 Ashley Prasad | Portfolio Resume</p>
+    <p class="mb-0"><a href="pdf/ashley_prasad_resume.pdf" target="_blank">Resume PDF Download</a></p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!-- FOLLOWED MARGE SIMPSON WEBSITE TEMPLATE ALL THORUGHOUT
+ UNLESS SPECIFIED.
+ BASIC NON-ACADEMIC REFERENCING PROVIDED.
+ 
+ 22242952   ASHLEY PRASAD-->
+
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ashley Prasad Portfolio Resume">
+  <meta name="Ashley Prasad" content="INFO1005 Website Design">
+  <title>Ashley Prasad | Porfolio Resume</title>
+
+  <!-- Browser Tab Icon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+
+  <!-- Google Font Package -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300&family=Rye&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+<a class="skip-link" href="#maincontent">Skip to main content</a>
+
+<nav class="navbar navbar-expand-lg sticky-top portfolio-nav" aria-label="Main portfolio navigation">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="img/profile_icon.jpg" alt="Profile Picture icon" class="brand-avatar img-fluid rounded-circle">
+      <span>Ashley Prasad</span>
+    </a>
+
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="flase"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggle-icon"></span>
+    </button>
+
+    <!-- Connecting all other html files as a page on main page. -->
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Home</a></li><li class="nav-item"><a class="nav-link" href="about.html">About</a></li><li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li><li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li><li class="nav-item"><a class="nav-link" href="contact.html">Get in touch</a></li>
+        <li class="nav-item ms-lg-3">
+
+            <!-- Implemented dark theme. Used colours from Marge Simpson example. -->
+          <div class="form-check form-switch theme-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="themeSwitch">
+            <label class="form-check-label" for="themeSwitch">Dark</label>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Welcoming visitors to my website. -->
+<main id="maincontent">
+  <section class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <p class="standout text-uppercase fw-bold">Hi there, Welcome to my Portfolio and Resume Website!</p>
+          <h1>My name is Ashley. I am a...</h1>
+
+          <!-- Wanted the typewriter effect on my page. -->
+          <h2 class="typing-heading">
+            <span class="typewrite"
+                  data-words='["Photographer", "Aspiring Web Designer", "Digital Researcher", "Efficient Learner"]'
+                  aria-live="polite"></span>
+          </h2>
+
+          <p class="lead"> Studying a Diploma in Information Communication Technology at Western Sydney University as of 2026. Working towards becoming an aspiring, professional, FUN, and efficient Website Developer.</p>
+
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a class="btn-portfolio" href="portfolio.html">View portfolio</a>
+            <a class="btn-portfolio" href="resume.html">View resume</a>
+          </div>
+        </div>
+
+        <div class="col-lg-5 text center">
+          <img src="img/profile_picture.jpg" class="img-fluid hero-img rounded-circle" alt="Ashley Prasad portfolio portrait">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container my-5">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <article class="feature-card p-4">
+
+          <!-- Changed icon to card image using Bootstrap icons: https://icons.getbootstrap.com/icons/card-image/ -->
+          <i class="bi bi-card-image feature-icon"></i>
+          <h2 class="h3">Logos</h2>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="feature-card p-4">
+          <!-- Changed icon to camera using Bootstrap icons: https://icons.getbootstrap.com/icons/camera/ -->
+          <i class="bi bi-camera feature-icon"></i>
+          <h2 class="h3">Photography</h2>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="feature-card p-4">
+          <!-- Changed icon to stars using Bootstrap icons: https://icons.getbootstrap.com/icons/stars/ -->
+          <i class="bi bi-stars feature-icon"></i>
+          <h2 class="h3">Artificial Intelligence Adverts</h2>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer py-4 mt-5">
+  <div class="container d-flex flex-column flex-md-row justify-content-between gap-3">
+    <p class="mb-0">&copy; 2026 Ashley Prasad | Portfolio Resume</p>
+    <p class="mb-0"><a href="pdf/ashley_prasad_resume.pdf" target="_blank">Resume PDF Download</a></p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
